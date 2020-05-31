@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@master
       - run: yarn install
       - name: Update gist
-        uses: tobimori/toggl-box@master
+        uses: ./
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIST_ID: ${{ secrets.GIST_ID }}
