@@ -19,3 +19,4 @@ jobs:
           TOGGL_WORKSPACE_ID: ${{ secrets.TOGGL_WORKSPACE_ID }}
           FILTER_BY_TAG: 7985682
           FILTER_BY_BILLABLE: both
+          FILTER_BY_USER: false
