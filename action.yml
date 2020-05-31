@@ -1,0 +1,11 @@
+name: toggl-box
+author: Tobias Möritz
+description: GitHub Action for updating a pinned gist to contain your weekly Toggl stats
+
+runs:
+  using: node12
+  main: ./index.js
+
+branding:
+  icon: power
+  color: red
