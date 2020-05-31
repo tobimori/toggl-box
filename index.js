@@ -1,4 +1,4 @@
-require('dotenv').config()
+// require('dotenv').config()
 const { Octokit } = require('@octokit/rest')
 const axios = require('axios')
 const eaw = require('eastasianwidth')
