@@ -1,0 +1,21 @@
+name: Update gist with Toggl stats
+on:
+  schedule:
+    - cron: "0 * * * *" # hourly
+  push:
+    branches: master # on push
+jobs:
+  update-gist:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - run: npm install
+      - name: Update gist
+        uses: tobimori/toggl-box@master
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GIST_ID: ${{ secrets.GIST_ID }}
+          TOGGL_API_TOKEN: ${{ secrets.TOGGL_API_TOKEN }}
+          TOGGL_WORKSPACE_ID: ${{ secrets.TOGGL_WORKSPACE_ID }}
+          FILTER_BY_TAG: 7985682
+          FILTER_BY_BILLABLE: both
