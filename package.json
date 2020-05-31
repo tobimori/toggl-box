@@ -1,0 +1,19 @@
+{
+  "name": "toggl-box",
+  "version": "1.0.0",
+  "description": "Update a gist to contain your weekly Toggl stats",
+  "main": "index.js",
+  "repository": "https://github.com/tobimori/toggl-box.git",
+  "author": "tobimori <tobias@moeritz.cc>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@octokit/rest": "^17.9.2",
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "eastasianwidth": "^0.2.0"
+  },
+  "devDependencies": {
+    "standard": "^14.3.4"
+  }
+}

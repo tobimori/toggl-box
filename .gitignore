@@ -1,0 +1,17 @@
+  
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Dependencies
+node_modules/
+
+# Unconfigured Editors
+.vscode/
+.idea
+
+# Logs
+yarn-error.log
+
+# Config files
+.env
