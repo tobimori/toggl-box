@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - run: npm install
+      - run: yarn install
       - name: Update gist
         uses: tobimori/toggl-box@master
         env:
