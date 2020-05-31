@@ -39,6 +39,10 @@
   - Valid options: `false` to disable the filter, `0` to filter out all entries with a tag, or a comma-separated list of tag ids. 
   - Defaults to a random tag id.
   - You can get a Tag ID by utilizing the [Toggl API](https://github.com/toggl/toggl_api_docs/blob/master/chapters/workspaces.md#get-workspace-tags)
+- **FILTER_BY_USER:** Shows only work done by a specific user in a workspace 
+  - Valid options: `false` to disable the filter or a comma-separated list of user ids. 
+  - Defaults to a `false`.
+  - You can get a User ID by utilizing the [Toggl API](A list of user IDs separated by a comma.)
 
 ## 🤫 Environment Secrets
 - **GIST_ID:** The ID portion from your gist url `https://gist.github.com/<github username>/`**`7887b94cbb97a90fe08498c4744bad4b`**.

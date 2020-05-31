@@ -9,7 +9,8 @@ const {
   TOGGL_API_TOKEN: togglToken,
   TOGGL_WORKSPACE_ID: workspaceId,
   FILTER_BY_TAG: filterTag,
-  FILTER_BY_BILLABLE: filterBillable
+  FILTER_BY_BILLABLE: filterBillable,
+  FILTER_BY_USER: filterUser
 } = process.env
 
 const octokit = new Octokit({
@@ -20,11 +21,12 @@ const baseUrl = 'https://toggl.com/reports/api/v2' // Toggl reports API: https:/
 
 async function main () {
   if (!gistId || !githubToken || !togglToken || !workspaceId) {
-    throw new Error('Please check your environment variables.')
+    throw new Error('Please check your environment secrets.')
   }
 
   const filterQuery = [`billable=${filterBillable}`]
   filterTag !== 'false' && filterQuery.push(`tag_ids=${filterTag}`)
+  filterUser !== 'false' && filterQuery.push(`user_ids=${filterUser}`)
 
   const apiEndpoint = `/weekly/?user_agent=tobimori%2Ftoggl-box&workspace_id=${workspaceId}&order_field=week_total&&order_desc=on&${filterQuery.join('&')}` // weekly endpoint
 
