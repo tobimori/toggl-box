@@ -1,6 +1,6 @@
 {
   "name": "toggl-box",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Update a gist to contain your weekly Toggl stats",
   "main": "index.js",
   "repository": "https://github.com/tobimori/toggl-box.git",

@@ -24,6 +24,10 @@ async function main () {
     throw new Error('Please check your environment secrets.')
   }
 
+  if (typeof filterTag === 'undefined' || typeof filterUser === 'undefined' || (filterBillable !== 'both' && filterBillable !== 'on' && filterBillable !== 'off')) {
+    throw new Error('Please check your filter options.')
+  }
+
   const filterQuery = [`billable=${filterBillable}`]
   filterTag !== 'false' && filterQuery.push(`tag_ids=${filterTag}`)
   filterUser !== 'false' && filterQuery.push(`user_ids=${filterUser}`)
@@ -38,7 +42,7 @@ async function main () {
       password: 'api_token'
     }
   }).catch((error) => {
-    console.error(error)
+    console.error(`toggl-box ran into an issue getting your Gist:\n${error}`)
   })
 
   console.log(`GET ${apiEndpoint}`)
