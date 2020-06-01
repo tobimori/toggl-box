@@ -62,6 +62,8 @@ async function main () {
     const time = data.data[i].totals[7]
     let name = data.data[i].title.project
 
+    if (!name) name = 'Without Project'
+
     // trim off long widechars
     for (let i = 24; i >= 0; i--) {
       if (eaw.length(name) <= 26) break
