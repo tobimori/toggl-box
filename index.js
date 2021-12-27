@@ -17,7 +17,7 @@ const octokit = new Octokit({
   auth: `token ${githubToken}`
 })
 
-const baseUrl = 'https://toggl.com/reports/api/v2' // Toggl reports API: https://github.com/toggl/toggl_api_docs/blob/master/reports.md
+const baseUrl = 'https://api.track.toggl.com/reports/api/v2' // Toggl reports API: https://github.com/toggl/toggl_api_docs/blob/master/reports.md
 
 async function main () {
   if (!gistId || !githubToken || !togglToken || !workspaceId) {
