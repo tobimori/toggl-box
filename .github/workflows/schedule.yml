@@ -4,6 +4,7 @@ on:
     - cron: "0 * * * *" # hourly
   push:
     branches: master # on push
+  workflow_dispatch:
 jobs:
   update-gist:
     runs-on: ubuntu-latest
