@@ -44,7 +44,7 @@
   - Defaults to a `false`.
   - You can get user ids by utilizing the [Toggl API](https://github.com/toggl/toggl_api_docs/blob/master/chapters/workspaces.md#get-workspace-users)
 
-## 🤫 Environment Secrets
+## 🤫 Repository Secrets
 - **GIST_ID:** The ID portion from your gist url `https://gist.github.com/<github username>/`**`7887b94cbb97a90fe08498c4744bad4b`**.
 - **GH_TOKEN:** The GitHub token generated above.
 - **TOGGL_API_TOKEN:** The API key you got from your Toggl profile above.
