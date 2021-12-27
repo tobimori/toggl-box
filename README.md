@@ -27,7 +27,7 @@
 
 ## 🖥 Project Setup
 1. Fork this repo
-2. Go to your fork's `Settings` > `Secrets` > `Add a new secret` for each environment secret (below)
+2. Go to your fork's `Settings` > `Secrets` > `Add a new secret` for each repository secret (below)
 3. Set filter options in `.github/workflows/schedule.yml` (also below)
 
 ## 🔥 Filter Options
