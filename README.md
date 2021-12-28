@@ -27,7 +27,7 @@
 
 ## 🖥 Project Setup
 1. Fork this repo
-2. Go to your fork's `Settings` > `Secrets` > `Add a new secret` for each environment secret (below)
+2. Go to your fork's `Settings` > `Secrets` > `Add a new secret` for each repository secret (below)
 3. Set filter options in `.github/workflows/schedule.yml` (also below)
 
 ## 🔥 Filter Options
@@ -44,7 +44,7 @@
   - Defaults to a `false`.
   - You can get user ids by utilizing the [Toggl API](https://github.com/toggl/toggl_api_docs/blob/master/chapters/workspaces.md#get-workspace-users)
 
-## 🤫 Environment Secrets
+## 🤫 Repository Secrets
 - **GIST_ID:** The ID portion from your gist url `https://gist.github.com/<github username>/`**`7887b94cbb97a90fe08498c4744bad4b`**.
 - **GH_TOKEN:** The GitHub token generated above.
 - **TOGGL_API_TOKEN:** The API key you got from your Toggl profile above.
